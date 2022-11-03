@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+ <link rel="stylesheet" href="products.css">
+</head>
+<body>
+          <div id="content-area"></div>
+
+        <section class="sidebar">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-link" data-content="Home">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="aboutus.html" class="menu-link" data-content="About Us">About Us</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contact.html" class="menu-link" data-content="Contact">Contact</a>
+                </li>
+                <li class="menu-item">
+                    <a href="signin.html" class="menu-link" data-content="Sign In">Sign In</a>
+                </li>
+                <li class="shopping-cart">
+                  <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+                
+        </section>
+     <section class="info-pumpkins" id="products">
+            <div class="section-header">
+         
+                <h1 class="section-heading">Products</h1>
+
+                <h3>All is</h3>
+                <div class="underline"></div>
+
+                <span class="discount">$24,99</span>
+                <span class="price">$17.99!!!</span>
+
+            </div>
+            <div class="pumpkins">
+                <div class="pumpkin">
+                    <div class="pumpkin-header">
+                        <i class="fas fa-ghost"></i>
+                        <h3>Halloween Bat</h3>
+                    </div>
+                    <button class="btn btn_orange">Purchase</button>
+                    <img src="images/Plushie 1.jpeg">
+
+                </div>
+                <div class="pumpkin">
+                    <div class="pumpkin-header">
+                        <i class="fas fa-ghost"></i>
+                        <h3>Halloween Cow</h3>
+                    </div>
+                    <button class="btn btn_orange"><a href="description.html">Purchase</a></button>
+                    <img src="images/Plushie 2.jpeg">
+
+                </div>
+                <div class="pumpkin">
+                    <div class="pumpkin-header">
+                        <i class="fas fa-ghost"></i>
+                        <h3>Cosplay Cat</h3>
+                    </div>
+                    <button class="btn btn_orange">Purchase</button>
+                    <img src="images/Plushie 3.jpeg">
+
+                </div>
+                <div class="pumpkin">
+                    <div class="pumpkin-header">
+                        <i class="fas fa-ghost"></i>
+                        <h3>Pumpkin Cat</h3>
+                    </div>
+                    <button class="btn btn_orange">Purchase</button>
+                    <img src="images/Plushie 4.jpeg">
+
+                </div>
+                <div class="pumpkin">
+                    <div class="pumpkin-header">
+                        <i class="fas fa-ghost"></i>
+                        <h3>Friendly Ghost</h3>
+                    </div>
+                    <button class="btn btn_orange">Purchase</button>
+                <img src="images/Plushie 5.jpeg">
+                </div>
+                <div class="pumpkin">
+                    <div class="pumpkin-header">
+                        <i class="fas fa-ghost"></i>
+                        <h3>Corn Candy Dog</h3>
+                    </div>
+                    <button class="btn btn_orange">Purchase</button>
+                    <img src="images/Plushie 6.jpeg">
+                </div>
+                <div class="img-wrapper-info-pumpkins">
+                    <img src="images/pumpkin.png" alt="pumpkin-image">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="shop">
+     <ul id="shopping" class="shopp"></ul>
+     </div>
+    <script>
+
+      var games = [
+        {
+          name: "Halloween flowers",
+          price: 50,
+          img: "images/halloween-flowers.jpg",
+          add: "purchase",
+          star: "4"
+        },
+        {
+          name: "Halloween 3d ghost",
+          price: 70,
+          img: "images/halloween-ghost-3d.jpg",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Pumpkin",
+          price: 40,
+          img: "images/img-deco-3.png",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Pumpkin",
+          price: 40,
+          img: "images/img-deco-3.png",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Halloween 3d ghost",
+          price: 40,
+          img: "images/halloween-ghost-3d.jpg",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Halloween flowers",
+          price: 40,
+          img: "images/halloween-flowers.jpg",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Halloween flowers",
+          price: 50,
+          img: "images/halloween-flowers.jpg",
+          add: "purchase",
+          star: "4"
+        },
+        {
+          name: "Halloween 3d ghost",
+          price: 70,
+          img: "images/halloween-ghost-3d.jpg",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Pumpkin",
+          price: 40,
+          img: "images/img-deco-3.png",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Pumpkin",
+          price: 40,
+          img: "images/img-deco-3.png",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Halloween 3d ghost",
+          price: 40,
+          img: "images/halloween-ghost-3d.jpg",
+          add: "purchase",
+          star: "4",
+        },
+        {
+          name: "Halloween flowers",
+          price: 40,
+          img: "images/halloween-flowers.jpg",
+          add: "purchase",
+          star: "4",
+        },
+      ];
+
+      function buildGames(parent, games) {
+        var html = "";
+        games.forEach(function (game) {
+          //Set Our Itemp template
+          let itemTemplate = `
+  <li>
+     <h2>${game.name}</h2>
+     <div class="shop-price">Price: $ ${game.price}</div>
+     <img src=${game.img} alt="Image of ${game.name}" />
+     <button class="btn btn-orange" id="btn">${game.add}</button>
+     <div class="rating">
+     <p>rating:</p><i class="fa fa-star" aria-hidden="true" style="color:#fff200"><i class="fa fa-star" aria-hidden="true" style="color:#fff200"></i><i class="fa fa-star" aria-hidden="true" style="color:#fff200"></i><i class="fa fa-star" aria-hidden="true" style="color:#fff200"></i></i></div>
+  </li>`;
+          //update the html
+          html += itemTemplate;
+        });
+        //Update the parent once
+        parent.innerHTML += html;
+        
+      }
+
+      buildGames(document.getElementById("shopping"), games);
+
+      
+    </script>
+</body>
+</html>

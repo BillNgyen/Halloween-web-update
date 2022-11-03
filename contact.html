@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: #ff4e50;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #ff4e50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #f9d423;
+      }
+
+      .container {
+        border-radius: 5px;
+        background: linear-gradient(to right, #ff4e50, #f9d423);
+        padding: 10px;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        .column,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: center">
+        <h2>Contact Us</h2>
+        <p>Leave us a message and add your email address to stay tune:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/sniper.jpeg" style="width: 100%" />
+        </div>
+        <div class="column">
+          <form action="https://formspree.io/f/xrgdyepq" method="POST">
+            <label for="fname">Username</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="Country">Please choose a country</option>
+              <option value="Viet nam">Viet nam</option>
+              <option value="US">America</option>
+            </select>
+            <label for="subject">Message</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <label for="ename">Your Email</label>
+            <input
+              type="text"
+              id="ename"
+              name="email"
+              placeholder="Your email.."
+              required
+            />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
