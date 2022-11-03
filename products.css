@@ -216,7 +216,6 @@ ul {
     font-family: Fruktur, serif;
     font-size: 7rem;
     text-align: center;
-    margin-bottom: 5rem;
     color: #52006a;
 }
 
@@ -236,7 +235,7 @@ ul {
     border: none;
     border-bottom: 0.2rem dashed #272727;
     background-color: transparent;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-top: 3rem;
     padding: 1rem 1rem 1rem 0;
     font-family: "Ceviche One", cursive;
