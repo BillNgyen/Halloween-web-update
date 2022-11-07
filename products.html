@@ -10,6 +10,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
  <link rel="stylesheet" href="products.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
           <div id="content-area"></div>
@@ -36,7 +43,6 @@
         </section>
      <section class="info-pumpkins" id="products">
             <div class="section-header">
-         
                 <h1 class="section-heading">Products</h1>
 
                 <h3>All is</h3>
@@ -105,122 +111,299 @@
             </div>
         </section>
     </div>
-    <div class="shop">
-     <ul id="shopping" class="shopp"></ul>
+
+    <div class="container mx-auto">
+      <h1 class="font-poppins text-center text-3xl font-bold pt-24">
+        Filter Products
+      </h1>
+    </div>
+
+    <!-- form -->
+    <form class="text-center py-4">
+      <input
+        type="text"
+        class="placeholder-gray-800 focus:outline-none bg-gray-200 text-gray-800 w-2/4 py-2 px-3 font-poppins rounded-md"
+        id="filterInput"
+        placeholder="Filter"
+      />
+    </form>
+    <!-- product grid -->
+     <div
+      class="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-12 gap-20"
+  >
+      <div class="item justify-self-center">
+        <img src="images/img-deco-3.png" class="bg-cover img" alt="img1" />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">1</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-flowers.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">2</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-ghost-3d.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">3</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img src="images/img-deco-3.png" class="bg-cover img" alt="img1" />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">1</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-flowers.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">2</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-ghost-3d.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">3</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img src="images/img-deco-3.png" class="bg-cover img" alt="img1" />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">1</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-flowers.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">2</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-ghost-3d.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">3</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img src="images/img-deco-3.png" class="bg-cover img" alt="img1" />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">1</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-flowers.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">2</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <div class="item justify-self-center">
+        <img
+          src="images/halloween-ghost-3d.jpg"
+          class="bg-cover img"
+          alt="img1"
+        />
+        <div class="text-center py-3 font-poppins">
+          <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i> <i class="fa-solid fa-star" style="color: #FFFF00"></i>
+          <h1 class="text-lg title">3</h1>
+          <a href="#" class="block"
+            ><span class="text-sm text-red-400">Category</span></a
+          >
+          <span class="block py-3">$<span class="text-md">12.99</span></span>
+          <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">
+            Buy Now
+          </button>
+        </div>
+      </div>
      </div>
-    <script>
-
-      var games = [
-        {
-          name: "Halloween flowers",
-          price: 50,
-          img: "images/halloween-flowers.jpg",
-          add: "purchase",
-          star: "4"
-        },
-        {
-          name: "Halloween 3d ghost",
-          price: 70,
-          img: "images/halloween-ghost-3d.jpg",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Pumpkin",
-          price: 40,
-          img: "images/img-deco-3.png",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Pumpkin",
-          price: 40,
-          img: "images/img-deco-3.png",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Halloween 3d ghost",
-          price: 40,
-          img: "images/halloween-ghost-3d.jpg",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Halloween flowers",
-          price: 40,
-          img: "images/halloween-flowers.jpg",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Halloween flowers",
-          price: 50,
-          img: "images/halloween-flowers.jpg",
-          add: "purchase",
-          star: "4"
-        },
-        {
-          name: "Halloween 3d ghost",
-          price: 70,
-          img: "images/halloween-ghost-3d.jpg",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Pumpkin",
-          price: 40,
-          img: "images/img-deco-3.png",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Pumpkin",
-          price: 40,
-          img: "images/img-deco-3.png",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Halloween 3d ghost",
-          price: 40,
-          img: "images/halloween-ghost-3d.jpg",
-          add: "purchase",
-          star: "4",
-        },
-        {
-          name: "Halloween flowers",
-          price: 40,
-          img: "images/halloween-flowers.jpg",
-          add: "purchase",
-          star: "4",
-        },
-      ];
-
-      function buildGames(parent, games) {
-        var html = "";
-        games.forEach(function (game) {
-          //Set Our Itemp template
-          let itemTemplate = `
-  <li>
-     <h2>${game.name}</h2>
-     <div class="shop-price">Price: $ ${game.price}</div>
-     <img src=${game.img} alt="Image of ${game.name}" />
-     <button class="btn btn-orange" id="btn">${game.add}</button>
-     <div class="rating">
-     <p>rating:</p><i class="fa fa-star" aria-hidden="true" style="color:#fff200"><i class="fa fa-star" aria-hidden="true" style="color:#fff200"></i><i class="fa fa-star" aria-hidden="true" style="color:#fff200"></i><i class="fa fa-star" aria-hidden="true" style="color:#fff200"></i></i></div>
-  </li>`;
-          //update the html
-          html += itemTemplate;
-        });
-        //Update the parent once
-        parent.innerHTML += html;
-        
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      
+      body {
+        background: linear-gradient(to right, #fdc830, #f37335);
+      }
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
       }
 
-      buildGames(document.getElementById("shopping"), games);
+      .img {
+        width: 290px;
+        height: 350px;
+        background-color: rgb(255, 166, 0);
+      }
+    </style>
+    <script>
+      
+      //  https://fakestoreapi.com/products
+
+      let grid = document.querySelector(".products");
+      let filterInput = document.getElementById("filterInput");
+
+      fetch("./database/store.json")
+        .then((res) => res.json())
+        .then((json) => {
+          // iterating products
+          for (let value of json) {
+            addElement(grid, value);
+          }
+        });
+
+      // add event listener
+      filterInput.addEventListener("keyup", filterProducts);
+
+      // callback function
+      function filterProducts() {
+        let filterValue = filterInput.value.toUpperCase();
+        let item = grid.querySelectorAll(".item");
+        // console.log(filterValue);
+
+        for (let i = 0; i < item.length; i++) {
+          let span = item[i].querySelector(".title");
+
+          if (span.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+            item[i].style.display = "initial";
+          } else {
+            item[i].style.display = "none";
+          }
+        }
+      }
+
+      // get value from the api create dynamic element
+      function addElement(appendIn, value) {
+        let div = document.createElement("div");
+        div.className = "item justify-self-center";
+
+        let { image, title, category, price } = value;
+
+        div.innerHTML = `
+            <img src="${image}" class="bg-cover img mx-auto" alt="img1">
+            <div class="text-center py-3 font-poppins">
+                <h1 class="text-lg title">${title}</h1>
+                <a href="#" class="block"><span class="text-sm text-red-400">${category}</span></a>
+                <span class="block py-3">$<span class="text-md">${price}</span></span>
+                <button class="border-2 px-8 py-1 bg-yellow-400 border rounded-md">Buy Now</button>
+            </div>
+    `;
+        appendIn.appendChild(div);
+      }
 
       
     </script>
-</body>
+  </body>
 </html>
