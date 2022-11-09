@@ -82,7 +82,6 @@ html {
   height: 100%;
   object-fit: cover;
   opacity: 0.5;
-  animation: scale 25s infinite alternate;
 }
 
 @keyframes scale {

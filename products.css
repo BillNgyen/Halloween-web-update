@@ -23,7 +23,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(to right, #ffa64d, #483828);
+    background: linear-gradient(to right, #ffa64d, #2e2a22);
 }
 
 .menu-link {
