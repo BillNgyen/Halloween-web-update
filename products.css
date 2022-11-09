@@ -23,11 +23,12 @@ html {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(to right, #7f00ff, #e100ff);
+    background: linear-gradient(to right, #ffa64d, #483828);
 }
 
 .menu-link {
-    font-family: Fruktur, serif;
+    font-family: "Playfair Display",
+        serif;
     font-size: 4rem;
     color: rgb(255, 255, 255);
     position: relative;
@@ -61,7 +62,8 @@ html {
     border: solid;
     border-radius: 25px;
     font-size: 45px;
-    font-family: Fruktur, serif;
+    font-family:"Playfair Display",
+        serif;
 }
 
 .section-header {
@@ -72,7 +74,8 @@ html {
 }
 
 .section-heading {
-    font-family: Fruktur, serif;
+    font-family: "Playfair Display",
+        serif;
     font-size: 7rem;
     color: #cd113b;
     text-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.8);
@@ -95,7 +98,8 @@ html {
 
 .discount {
     font-size: 30px;
-    font-family: 'Bungee Spice', cursive;
+    font-family: "Playfair Display",
+        serif;
     text-decoration: line-through;
     color: #f9b414;
     background-color: rgba(0, 0, 0, 0.5);
@@ -109,7 +113,8 @@ ul {
 
 .price {
     font-size: 30px;
-    font-family: 'Bungee Spice', cursive;
+    font-family: "Playfair Display",
+        serif;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
 }
@@ -133,7 +138,8 @@ ul {
 
 .pumpkin-header h3 {
     font-size: 2.5rem;
-    font-family: Fruktur, serif;
+    font-family: "Playfair Display",
+        serif;
     margin-bottom: 2rem;
     color: #52006a;
 }
@@ -213,7 +219,8 @@ ul {
 }
 
 .register-heading {
-    font-family: Fruktur, serif;
+    font-family: "Playfair Display",
+        serif;
     font-size: 7rem;
     text-align: center;
     color: #52006a;
@@ -238,7 +245,8 @@ ul {
     margin-bottom: 1rem;
     margin-top: 3rem;
     padding: 1rem 1rem 1rem 0;
-    font-family: "Ceviche One", cursive;
+    font-family: "Playfair Display",
+        serif;
     font-size: 2.2rem;
 }
 
@@ -253,7 +261,8 @@ ul {
 .input-group label {
     position: absolute;
     left: 0;
-    font-family: "Ceviche One", cursive;
+    font-family:"Playfair Display",
+        serif;
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #52006a;
@@ -279,7 +288,8 @@ ul {
     border-radius: 3.7rem;
     margin-top: 2rem;
     font-size: 3.2rem;
-    font-family: "Ceviche One", cursive;
+    font-family: "Playfair Display",
+        serif;
     cursor: pointer;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
@@ -564,13 +574,15 @@ ul {
 }
 .shop-price {
     font-size: 30px;
-    font-family: 'Bungee Spice', cursive;
+    font-family: "Playfair Display",
+        serif;
     background-color: #ffc480;
     border-radius: 11% 89% 70% 30% / 76% 45% 55% 24%;
 }
 
 #shopping li h2 {
-    font-family: sans-serif;
+    font-family: "Playfair Display",
+        serif;
     font-size: 20px;
     display: flex;
     justify-content: center;

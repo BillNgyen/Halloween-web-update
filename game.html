@@ -10,7 +10,7 @@
 
     <style>
       body {
-        background: linear-gradient(to right, #a8ff78, #78ffd6);
+        background: linear-gradient(to right, #ffa64d, #483828);
       }
       .btn {
         background: rgb(126, 178, 255);
@@ -37,8 +37,8 @@
   <script>
     const board_border = "black";
     const board_background = "white";
-    const snake_col = "lightblue";
-    const snake_border = "darkblue";
+    const snake_col = "#ffa64d";
+    const snake_border = "483828";
 
     let snake = [
       { x: 200, y: 200 },
@@ -104,8 +104,8 @@
     }
 
     function drawFood() {
-      snakeboard_ctx.fillStyle = "lightgreen";
-      snakeboard_ctx.strokestyle = "darkgreen";
+      snakeboard_ctx.fillStyle = "483828";
+      snakeboard_ctx.strokestyle = "483828";
       snakeboard_ctx.fillRect(food_x, food_y, 10, 10);
       snakeboard_ctx.strokeRect(food_x, food_y, 10, 10);
     }
